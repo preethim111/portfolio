@@ -39,8 +39,8 @@
             <header>
                 <h3>University of California San Diego</h3>
             </header>
-            <p>Bachelor of Science in Data Science</p>
-            <time datetime="2023-09">Sep 2023</time> - <time datetime="2027-06">Jun 2027</time>
+            <p>Bachelor of Science in Data Science<time datetime="2023-09">  (Sep 2023</time> - <time datetime="2027-06">Jun 2027)</time></p>
+            
         </article>
     </section>
 
@@ -59,6 +59,21 @@
                 </li>
                 <li>
                     Concepts Taught: BFS, DFS, Complexity, Hashing, Graph Theory, Kruskal’s, Dijkstra’s, Prim’s, Bellman Ford
+                </li>
+            </ul>
+            <header>
+                <h3>Data Science Projects Team</h3>
+                <p>Data Science Student Society | <time datetime="2025-03">Jan 2025</time> - Present</p>
+            </header>
+            <ul>
+                <li>
+                    Playlit Generator that takes input of user's caption and playlist with songs 
+                </li>
+                <li>
+                    Used Youtube API to get top 100 comments for each of the songs in user's playlist 
+                </li>
+                <li>
+                    Vectorized comments and the user's caption and used cosine similarity to find the most suitable songs for the user
                 </li>
             </ul>
             <header>
@@ -92,16 +107,28 @@
         </header>
         <article>
             <header>
-                <h3>Manifest</h3>
+                <span class="project-header">
+                    <h3>Manifest | </h3>
+                    <p class="tech-stack">React.js, Node.js, MongoDB, Express, S3 buckets</p>
+                </span>
             </header>
             <ul>
                 <li>
                     Built a goal-oriented vision board platform for users to create vision boards
                 </li>
+                <li>
+                    Features: authentication (using Firebase), create vision boards, AI image generator (Dall-e-3) using OpenAI, image search using Pexels API
+                </li>
+                <li>
+                    Deployed frontend on Vercel and backend on Render
+                </li>
             </ul>
 
             <header>
-                <h3>Detecting Anomalies in Sea Level</h3>
+                <span class="project-header">
+                    <h3>Detecting Anomalies in Sea Level | </h3>
+                    <p class="tech-stack">Python, Tensorflow, Pandas, numpy, matplotlib</p>
+                </span> 
             </header>
             <ul>
                 <li>
@@ -118,5 +145,33 @@
 
         </article>
     </section>
+
+
+    <section>
+        <header>
+            <h2>Awards</h2>
+        </header>
+        <article>
+            <header>
+                <h3>DataHacks Hackathon Winner</h3>
+                <li>
+                    Real-time, multiplayer dance battle web app
+                </li>
+                <li>
+                    Frontend: Built with React.js. Includes a responsive split-screen layout for video feeds, scoring, and reference choreography.
+                </li>
+                <li>
+                    Pose Detection: MediaPipe is used to extract 3D body landmarks from each frame.
+                </li>
+                <li>
+                    Similarity Scoring: We use cosine similarity between normalized pose vectors for smooth, frame-by-frame accuracy.
+                </li>
+
+            </header>
+        </article>
+    </section>
+
+
+
 </body>
 </html>
