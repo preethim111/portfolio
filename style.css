@@ -81,13 +81,13 @@ form {
 .projects article {
   grid-template-rows: subgrid;
   grid-row: span 3;
-  gap: 5em;
+  gap: 2em;
   display: grid;
 }
 
 h2 {
   margin: 0;
-  font-size: 200%;
+  font-size: 180%;
   margin-bottom: 1ch;
 }
 
@@ -124,7 +124,7 @@ section a {
 
 .project-header {
   display: flex;
-  align-items: baseline; /* aligns text nicely */
+  align-items: baseline; 
   gap: 6px;
 }
 
