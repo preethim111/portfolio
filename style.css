@@ -139,3 +139,50 @@ section a {
   font-family: inherit;
   display: flex;
 }
+
+
+/* #profile-stats {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fafafa;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} */
+
+#profile-stats h2 {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  color: #ddd;
+}
+
+.stats-grid {
+  display: flex;
+  justify-content: space-between; /* Spread out items across the row */
+  gap: 1.5rem;
+}
+
+.stats-grid dt {
+  grid-row: 1; /* Place <dt> elements in the first row */
+  font-weight: bold;
+  text-align: right;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.stats-grid dd {
+  grid-row: 2; /* Place <dd> elements in the second row */
+  font-size: 1.1rem;
+  text-align: left;
+  color: #333;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  max-height: 200px; /* You can tweak this value */
+}
