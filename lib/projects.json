@@ -13,13 +13,13 @@
     },
     {
         "title": "Detecting Sea level Anomalies",
-        "year": 2021,
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A CNN model the detects sea level anomalies from heat maps representing sea level data!"
     },
     {
         "title": "Expository Visuailzation",
-        "year": 2022,
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A visualization representing which is the healthier snack option based on nutrient breakdown!"
     },
@@ -31,7 +31,7 @@
     },
     {
         "title": "Interactive Visualization",
-        "year": 2020,
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Created an interactive visulazation for users to experiment with!"
     },
@@ -43,31 +43,31 @@
     },
     {
         "title": "Stock Market Project",
-        "year": 2019,
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Web application that integrates the Stock API to display visualizations and information about stocks!"
     },
     {
         "title": "Recipes and Ratings",
-        "year": 2018,
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Recipe Analytics: Linking Recipe Complexity and User Ratings for Culinary Insights"
     },
     {
         "title": "Playlist Generator",
-        "year": 2017,
+        "year": 2025,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Reccomends users a list of 10 songs that they would like based on their initial playlist and textual input!"
     },
     {
         "title": "Spotify Explorer",
-        "year": 2016,
+        "year": 2024,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "A web application where you can explore your favorite artists, songs, and albums!"
     },
     {
         "title": "Data Analysis of Taylor Swift's Discography",
-        "year": 2015,
+        "year": 2023,
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Explores lyrical and audio features of Taylor Swift's discography!"
     }
