@@ -106,7 +106,7 @@ function renderScatterPlot(data, commits) {
     // Put all the JS code of Steps inside this function
     const width = 1000;
     const height = 600;
-xx
+
     const svg = d3
     .select('#chart')
     .append('svg')
