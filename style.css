@@ -293,3 +293,126 @@ path {
     fill: var(--color);
   }
 }
+
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  /* max-width: 1000px; */
+  margin: 0 auto;
+}
+
+.stats dt {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  color: #6b7280; 
+  margin-bottom: 0.25rem;
+}
+
+.stats dd {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+dl.stats {
+  margin: 0;
+}
+
+.gridlines line {
+  stroke: #d1d5db; /* light gray (Tailwind gray-300) */
+  stroke-opacity: 0.5;
+  shape-rendering: crispEdges;
+}
+
+.gridlines path {
+  display: none; /* hides the domain path */
+}
+
+
+dl.info {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 1rem;
+  margin: 0;
+  padding: 1rem;
+  /* max-width: 320px; */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  font-size: 0.875rem;
+
+  transition-duration: 500ms;
+  transition-property: opacity, visibility;
+
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  border-radius: 0.5rem; /* rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* soft shadow */
+  backdrop-filter: blur(8px); /* frosted glass effect */
+}
+
+dl.info dt {
+  margin: 0;
+  font-weight: bold;
+  color: #6b7280; /* Tailwind gray-500 */
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+dl.info dd {
+  margin: 0;
+  font-weight: normal;
+  color: #111827; /* Tailwind gray-900 */
+}
+
+dl.info[hidden]:not(:hover, :focus-within) {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tooltip {
+  position: fixed;
+  top: 1em;
+  left: 1em;
+  z-index: 100;
+}
+
+circle {
+  transition: 200ms;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+circle:hover {
+  transform: scale(1.5);
+}
+
+circle.selected {
+  fill: #ff6b6b;
+}
+
+
+#language-breakdown {
+  display: flex;
+  /* gap: 2rem;
+  margin-top: 1rem; */
+  padding: 1rem 0;
+  justify-content: start;
+  flex-wrap: wrap;
+  font-family: monospace;
+}
+
+
+
+
+
+
+#chart svg {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  display: block;
+}

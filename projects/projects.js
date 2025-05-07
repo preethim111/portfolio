@@ -94,7 +94,7 @@ function renderPieChart(projectsGiven) {
                 }
             });
     });
-}
+}``
 
 // Initial render
 renderPieChart(projects);

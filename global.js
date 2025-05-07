@@ -25,7 +25,9 @@ let pages = [
     { url: 'projects/', title: 'Projects' },
     { url: 'cv/', title: 'CV' },
     { url: 'contact/', title: 'Contact' },
+    { url: 'meta/', title: 'Meta' },
     { url: 'https://github.com/preethim111', title: 'Profile' },
+    
 ]
 
 let nav = document.createElement('nav');
