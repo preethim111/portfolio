@@ -10,10 +10,11 @@ body {
     /* Set line height to 1.5 times the font size
          and use the OS's UI font as the website font
        */
-    font: 100%/1.5 system-ui;
-    max-width: 100ch; 
+    font: 100%/1.5 system-ui; 
     margin-inline: auto;
     padding: 2rem;
+    max-width: min(120ch, 80vw);
+
   }
 
 
@@ -184,7 +185,10 @@ section a {
   height: auto;
   border-radius: 8px;
   object-fit: cover;
-  max-height: 200px; /* You can tweak this value */
+  max-height: 150px; /* Reduced from 200px */
+  width: 300px; /* Added fixed width */
+  margin: 0 auto; /* Center the image */
+  display: block; /* Ensure proper centering */
 }
 
 #projects-pie-plot {
@@ -384,6 +388,10 @@ circle {
   transition: 200ms;
   transform-origin: center;
   transform-box: fill-box;
+
+  @starting-style {
+    r: 0;
+  }
 }
 
 circle:hover {
@@ -408,11 +416,209 @@ circle.selected {
 
 
 
-
-
 #chart svg {
   width: 100%;
   max-width: none;
   height: auto;
   display: block;
+}
+
+
+
+#commitFilterUI {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  margin-bottom: 1em;
+}
+
+#selectedTime {
+  margin-left: auto;
+}
+
+#commitSlider {
+  flex: 1;
+  max-width: 600px; 
+}
+
+
+
+.line {
+  width: 0.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  flex: 0 0 auto;  /* prevents squishing/stretching */
+}
+
+
+
+.files {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.files > div {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+.files dt {
+  grid-column: 1;
+  font-weight: bold;
+  color: #666;
+}
+
+.files dt code {
+  font-family: monospace;
+  background: #f5f5f5;
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+}
+
+.files dt small {
+  display: block;
+  font-size: 0.8em;
+  opacity: 0.7;
+  margin-top: 0.2em;
+}
+
+.files dd {
+  grid-column: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  align-content: start;
+  gap: 0.15em;
+  padding-top: 0.6em;
+  margin-left: 0;
+}
+
+.line {
+  display: flex;
+  width: 0.5em;
+  aspect-ratio: 1;
+  border-radius: 50%;
+}
+
+
+
+#scrollytelling {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+}
+
+#scroll-container {
+  grid-column: 1;
+  position: relative;
+  width: 95%;
+  height: 350px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+#chart {
+  grid-column: 2;
+}
+
+#spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none; /* transparent */
+  pointer-events: none;
+}
+
+#items-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.item {
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
+}
+
+
+
+#scroll-container-files {
+  height: 350px;
+  overflow-y: auto;
+  position: relative;
+  border: 1px solid #ccc;
+  margin-top: 2rem;
+}
+
+#spacer-files {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#items-container-files {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.item-file {
+  height: 160px;
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 1px solid #eee;
+}
+
+#scrollytelling-files {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: subgrid;
+  margin-top: 2rem;
+}
+
+#files-chart {
+  grid-column: 1;
+}
+
+#files-scroll-container {
+  grid-column: 2;
+  position: relative;
+  width: 95%;
+  height: 250px; /* Reduced from 350px */
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+#files-spacer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: none;
+  pointer-events: none;
+}
+
+#files-items-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.files-item {
+  height: 120px; /* Reduced from 160px */
+  padding: 10px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #eee;
 }

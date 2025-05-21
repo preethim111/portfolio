@@ -10,8 +10,36 @@
     </head>
     <body>
         <div id="stats"></div>
-        <h2>Commits by time of day</h2>
-        <div id="chart"></div>
+        <h2>Commits over time</h2>
+
+        <!-- <div id="commitFilterUI" style="display: flex; align-items: baseline; gap: 1em; margin-bottom: 1em;">
+            <label for="commitSlider">Show commits until:</label>
+            <input type="range" id="commitSlider" min="0" max="100" value="100" />
+            <time id="selectedTime" style="margin-left: auto;"></time>
+        </div> -->
+
+        <dl class="files">
+        </dl>
+
+
+        <div id="scrollytelling">
+            <div id="scroll-container">
+              <div id="spacer"></div>
+              <div id="items-container"></div>
+            </div>
+            <!-- our old scatterplot div -->
+            <div id="chart"></div>
+        </div>
+
+        <h2>File sizes over time</h2>
+        <div id="scrollytelling-files">
+            <div id="files-chart"></div>
+            <div id="files-scroll-container">
+                <div id="files-spacer"></div>
+                <div id="files-items-container"></div>
+            </div>
+        </div>
+
         <dl id="commit-tooltip" class="info tooltip" hidden>
         
 
